@@ -1,14 +1,16 @@
 package main;
 
 import dao.CuentaDAO;
-import models.Cuenta;
+import views.GestionCuentasPanel;
 
 public class Main {
 
     public static void main(String[] args) {
-
+        
+        new GestionCuentasPanel();
         CuentaDAO dao = new CuentaDAO();
-
+        
+        /*
         // CREAR
         Cuenta cuenta = new Cuenta(
                 "1.1.01",
@@ -19,7 +21,6 @@ public class Main {
 
         dao.crearCuenta(cuenta);
 
-        /*
         // LISTAR
         dao.listarCuentas();
 
